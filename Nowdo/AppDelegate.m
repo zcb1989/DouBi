@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ZCBNetworking.h"
+#import "ZCBSideBarViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,6 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    ZCBSideBarViewController *sideBarVC = [[ZCBSideBarViewController alloc] init];
+    self.window.rootViewController = sideBarVC;
+    self.window.backgroundColor = [UIColor blueColor];
+    [self.window makeKeyAndVisible];
     
     return YES;
 }

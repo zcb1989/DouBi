@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		3E5BC0951CE56359007C84D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5BC0941CE56359007C84D7 /* main.m */; };
 		3E5BC0981CE56359007C84D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5BC0971CE56359007C84D7 /* AppDelegate.m */; };
-		3E5BC09B1CE56359007C84D7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5BC09A1CE56359007C84D7 /* ViewController.m */; };
-		3E5BC09E1CE56359007C84D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E5BC09C1CE56359007C84D7 /* Main.storyboard */; };
 		3E5BC0A01CE56359007C84D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E5BC09F1CE56359007C84D7 /* Assets.xcassets */; };
 		3E5BC0A31CE56359007C84D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E5BC0A11CE56359007C84D7 /* LaunchScreen.storyboard */; };
 		3E5BC0AE1CE56359007C84D7 /* NowdoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5BC0AD1CE56359007C84D7 /* NowdoTests.m */; };
 		3E5BC0B91CE56359007C84D7 /* NowdoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5BC0B81CE56359007C84D7 /* NowdoUITests.m */; };
+		92409ED91CE95D8E0091808B /* ZCBSideBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92409ED81CE95D8E0091808B /* ZCBSideBarViewController.m */; };
+		92409EDC1CE964EF0091808B /* ZCBLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92409EDB1CE964EF0091808B /* ZCBLeftViewController.m */; };
+		92409EE01CE966B70091808B /* NDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92409EDF1CE966B70091808B /* NDMainViewController.m */; };
 		928308761CE5B0D8008AA4D3 /* ZCBNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 928308751CE5B0D8008AA4D3 /* ZCBNetworking.m */; };
 		D78976FF2CB686B318A8CA6B /* libPods-Nowdo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D49EB57DDB33E79289CB850 /* libPods-Nowdo.a */; };
 /* End PBXBuildFile section */
@@ -41,9 +42,6 @@
 		3E5BC0941CE56359007C84D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3E5BC0961CE56359007C84D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3E5BC0971CE56359007C84D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3E5BC0991CE56359007C84D7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3E5BC09A1CE56359007C84D7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		3E5BC09D1CE56359007C84D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3E5BC09F1CE56359007C84D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E5BC0A21CE56359007C84D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E5BC0A41CE56359007C84D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +54,13 @@
 		500CC5362594CB5B5D083AA4 /* Pods-Nowdo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nowdo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nowdo/Pods-Nowdo.release.xcconfig"; sourceTree = "<group>"; };
 		5C1037A508F544190294FBF3 /* Pods-Nowdo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nowdo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nowdo/Pods-Nowdo.debug.xcconfig"; sourceTree = "<group>"; };
 		7D49EB57DDB33E79289CB850 /* libPods-Nowdo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Nowdo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92409ED71CE95D8E0091808B /* ZCBSideBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCBSideBarViewController.h; sourceTree = "<group>"; };
+		92409ED81CE95D8E0091808B /* ZCBSideBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCBSideBarViewController.m; sourceTree = "<group>"; };
+		92409EDA1CE964EF0091808B /* ZCBLeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCBLeftViewController.h; sourceTree = "<group>"; };
+		92409EDB1CE964EF0091808B /* ZCBLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCBLeftViewController.m; sourceTree = "<group>"; };
+		92409EDE1CE966B70091808B /* NDMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDMainViewController.h; sourceTree = "<group>"; };
+		92409EDF1CE966B70091808B /* NDMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDMainViewController.m; sourceTree = "<group>"; };
+		92409EE11CE970020091808B /* ZCBSideBarDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCBSideBarDelegate.h; sourceTree = "<group>"; };
 		928308741CE5B0D8008AA4D3 /* ZCBNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCBNetworking.h; sourceTree = "<group>"; };
 		928308751CE5B0D8008AA4D3 /* ZCBNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCBNetworking.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,12 +116,10 @@
 		3E5BC0921CE56359007C84D7 /* Nowdo */ = {
 			isa = PBXGroup;
 			children = (
+				92409ED51CE95B3A0091808B /* UI */,
 				928308731CE5B0B5008AA4D3 /* Networking */,
 				3E5BC0961CE56359007C84D7 /* AppDelegate.h */,
 				3E5BC0971CE56359007C84D7 /* AppDelegate.m */,
-				3E5BC0991CE56359007C84D7 /* ViewController.h */,
-				3E5BC09A1CE56359007C84D7 /* ViewController.m */,
-				3E5BC09C1CE56359007C84D7 /* Main.storyboard */,
 				3E5BC09F1CE56359007C84D7 /* Assets.xcassets */,
 				3E5BC0A11CE56359007C84D7 /* LaunchScreen.storyboard */,
 				3E5BC0A41CE56359007C84D7 /* Info.plist */,
@@ -158,6 +161,36 @@
 				500CC5362594CB5B5D083AA4 /* Pods-Nowdo.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		92409ED51CE95B3A0091808B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				92409EDD1CE966970091808B /* mainViewController */,
+				92409ED61CE95B530091808B /* sideBar */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		92409ED61CE95B530091808B /* sideBar */ = {
+			isa = PBXGroup;
+			children = (
+				92409ED71CE95D8E0091808B /* ZCBSideBarViewController.h */,
+				92409ED81CE95D8E0091808B /* ZCBSideBarViewController.m */,
+				92409EDA1CE964EF0091808B /* ZCBLeftViewController.h */,
+				92409EDB1CE964EF0091808B /* ZCBLeftViewController.m */,
+				92409EE11CE970020091808B /* ZCBSideBarDelegate.h */,
+			);
+			path = sideBar;
+			sourceTree = "<group>";
+		};
+		92409EDD1CE966970091808B /* mainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				92409EDE1CE966B70091808B /* NDMainViewController.h */,
+				92409EDF1CE966B70091808B /* NDMainViewController.m */,
+			);
+			path = mainViewController;
 			sourceTree = "<group>";
 		};
 		928308731CE5B0B5008AA4D3 /* Networking */ = {
@@ -285,7 +318,6 @@
 			files = (
 				3E5BC0A31CE56359007C84D7 /* LaunchScreen.storyboard in Resources */,
 				3E5BC0A01CE56359007C84D7 /* Assets.xcassets in Resources */,
-				3E5BC09E1CE56359007C84D7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,8 +392,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E5BC09B1CE56359007C84D7 /* ViewController.m in Sources */,
+				92409ED91CE95D8E0091808B /* ZCBSideBarViewController.m in Sources */,
+				92409EE01CE966B70091808B /* NDMainViewController.m in Sources */,
 				928308761CE5B0D8008AA4D3 /* ZCBNetworking.m in Sources */,
+				92409EDC1CE964EF0091808B /* ZCBLeftViewController.m in Sources */,
 				3E5BC0981CE56359007C84D7 /* AppDelegate.m in Sources */,
 				3E5BC0951CE56359007C84D7 /* main.m in Sources */,
 			);
@@ -399,14 +433,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3E5BC09C1CE56359007C84D7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3E5BC09D1CE56359007C84D7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3E5BC0A11CE56359007C84D7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -455,6 +481,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IBSC_FLATTEN_NIBS = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -493,6 +520,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IBSC_FLATTEN_NIBS = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
