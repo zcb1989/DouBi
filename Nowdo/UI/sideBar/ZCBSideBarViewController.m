@@ -53,7 +53,7 @@ const float MoveAnimationDuration = 0.8;
     self.contentView.layer.shadowRadius = 3;//阴影半径 默认值是3
     //初始化内容视图和背景视图
     self.navBackView = [[UIView alloc] initWithFrame:self.view.bounds];
-    self.navBackView.backgroundColor = [UIColor purpleColor];
+//    self.navBackView.backgroundColor = [UIColor purpleColor];
     [self.view addSubview:self.navBackView];
     self.contentView = [[UIView alloc] initWithFrame:self.view.bounds];
     self.contentView.backgroundColor = [UIColor yellowColor];
@@ -65,8 +65,9 @@ const float MoveAnimationDuration = 0.8;
     self.leftViewController.view.frame = self.navBackView.bounds;
     
     panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panInContentView:)];
+    panGestureRecognizer.maximumNumberOfTouches = 1;
     [self.contentView addGestureRecognizer:panGestureRecognizer];
-    self.view.backgroundColor = [UIColor darkGrayColor];
+    
     //添加主界面视图
     [self addMainViewController];
     
@@ -80,18 +81,6 @@ const float MoveAnimationDuration = 0.8;
     [self.contentView addSubview:nav.view];
     [self.view bringSubviewToFront:self.contentView];
     
-    CGMutablePathRef path = CGPathCreateMutable();
-    CGRect screenBounds = [[UIScreen mainScreen] bounds];
-    CGPathMoveToPoint(path, NULL,screenBounds.origin.x, screenBounds.origin.y);
-    CGPathAddLineToPoint(path, NULL,screenBounds.size.width, screenBounds.size.height);
-    CGPathMoveToPoint(path, NULL,screenBounds.size.width, screenBounds.origin.y);
-    CGPathAddLineToPoint(path, NULL,screenBounds.origin.x, screenBounds.size.height);
-    CGContextRef currentContext = UIGraphicsGetCurrentContext();
-    CGContextAddPath(currentContext, path);
-    [[UIColor blackColor] setStroke];
-    CGContextDrawPath(currentContext, kCGPathStroke);
-    CGPathRelease(path);
-    
 }
 
 - (void)panInContentView:(UIPanGestureRecognizer *)panReconizer
@@ -99,10 +88,16 @@ const float MoveAnimationDuration = 0.8;
     CGPoint point = [panReconizer locationInView:self.view];
     CGFloat translation = [panReconizer translationInView:self.contentView].x;
     NSLog(@"handle panRecongizer pointx is %f ; pointY is %f translation x is %f",point.x,point.y,translation);
-
-    if (panReconizer.state == UIGestureRecognizerStateChanged)
+    if (panReconizer.state == UIGestureRecognizerStateBegan)
     {
-        if (translation < 0 && _sideBarShowing == NO) {
+        //限制开始滑动的位置 只能滑动左侧
+        if (point.x > panAreaX) {
+            return;
+        }
+    }
+    else if (panReconizer.state == UIGestureRecognizerStateChanged)
+    {
+        if ((translation < 0 && _sideBarShowing == NO )|| fabs(translation) > ContentOffset) {
             
             return;//不让往左滑
         }
@@ -114,8 +109,8 @@ const float MoveAnimationDuration = 0.8;
             
         }
         [self.navBackView bringSubviewToFront:view];
-//        [self statusBarView].transform = panReconizer.view.transform;
-
+        //        [self statusBarView].transform = panReconizer.view.transform;
+        
         
     }else if (panReconizer.state == UIGestureRecognizerStateEnded)
     {
@@ -198,7 +193,6 @@ const float MoveAnimationDuration = 0.8;
             _sideBarShowing = YES;
         }
         currentTranslate = self.contentView.transform.tx;
-        NSLog(@"currentTranslate is %f",currentTranslate);
     };
     self.contentView.userInteractionEnabled = NO;
     self.navBackView.userInteractionEnabled = NO;

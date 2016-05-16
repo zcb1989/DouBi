@@ -13,6 +13,7 @@
  *  SideBar偏移量
  */
 #define ContentOffset ([UIScreen mainScreen].bounds.size.width) / 6 * 5 - 10
+#define panAreaX     120
 
 @interface ZCBSideBarViewController : UIViewController<ZCBSideBarDelegate,UINavigationControllerDelegate>
 

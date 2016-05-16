@@ -21,7 +21,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     ZCBSideBarViewController *sideBarVC = [[ZCBSideBarViewController alloc] init];
     self.window.rootViewController = sideBarVC;
-    self.window.backgroundColor = [UIColor blueColor];
+    self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
     return YES;
