@@ -70,7 +70,9 @@
     CGPoint location = [gestureRecognizer locationInView:self];
     
     NSLog(@"velocity.x:%f----location.x:%d",velocity.x,(int)location.x%(int)[UIScreen mainScreen].bounds.size.width);
-    if (velocity.x > 0.0f&&(int)location.x%(int)[UIScreen mainScreen].bounds.size.width<60) {
+    BOOL isShowSlider = [[NSUserDefaults standardUserDefaults] boolForKey:@"isShowSlider"];
+    if ((velocity.x > 0.0f&&(int)location.x%(int)[UIScreen mainScreen].bounds.size.width<60) || isShowSlider == YES)
+    {
         return NO;
     }
     return YES;

@@ -86,7 +86,7 @@ const float MoveAnimationDuration = 0.8;
 {
     CGPoint point = [panReconizer locationInView:panReconizer.view];
     CGFloat translation = [panReconizer translationInView:panReconizer.view].x;
-    NSLog(@"handle panRecongizer pointx is %f ; pointY is %f translation x is %f",point.x,point.y,translation);
+//    NSLog(@"handle panRecongizer pointx is %f ; pointY is %f translation x is %f",point.x,point.y,translation);
     if (panReconizer.state == UIGestureRecognizerStateBegan)
     {
         //限制开始滑动的位置 只能滑动左侧
@@ -187,10 +187,14 @@ const float MoveAnimationDuration = 0.8;
                 tapGestureRecognizer = nil;
             }
             _sideBarShowing = NO;
+            [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"isShowSlider"];
+            [[NSUserDefaults standardUserDefaults] synchronize];
         }else
         {
             [self contentViewAddTapGestures];
             _sideBarShowing = YES;
+            [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"isShowSlider"];
+            [[NSUserDefaults standardUserDefaults] synchronize];
         }
         currentTranslate = self.contentView.transform.tx;
     };
