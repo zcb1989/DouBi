@@ -17,6 +17,12 @@
 		92409EDC1CE964EF0091808B /* ZCBLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92409EDB1CE964EF0091808B /* ZCBLeftViewController.m */; };
 		92409EE01CE966B70091808B /* NDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92409EDF1CE966B70091808B /* NDMainViewController.m */; };
 		928308761CE5B0D8008AA4D3 /* ZCBNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 928308751CE5B0D8008AA4D3 /* ZCBNetworking.m */; };
+		92DA3EA61CEAAB66001AF690 /* NDTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DA3EA51CEAAB66001AF690 /* NDTopView.m */; };
+		92DA3EAC1CEAB1B2001AF690 /* NDDynamicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DA3EAB1CEAB1B2001AF690 /* NDDynamicView.m */; };
+		92DA3EAF1CEAB203001AF690 /* NDDiscoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DA3EAE1CEAB203001AF690 /* NDDiscoverView.m */; };
+		92DA3EB21CEAB228001AF690 /* NDTeamView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DA3EB11CEAB228001AF690 /* NDTeamView.m */; };
+		92DA3EB51CEAB26C001AF690 /* NDMainScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DA3EB41CEAB26C001AF690 /* NDMainScroll.m */; };
+		92DA3EB81CEAB54B001AF690 /* NDNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DA3EB71CEAB54B001AF690 /* NDNavigation.m */; };
 		D78976FF2CB686B318A8CA6B /* libPods-Nowdo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D49EB57DDB33E79289CB850 /* libPods-Nowdo.a */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +69,20 @@
 		92409EE11CE970020091808B /* ZCBSideBarDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCBSideBarDelegate.h; sourceTree = "<group>"; };
 		928308741CE5B0D8008AA4D3 /* ZCBNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCBNetworking.h; sourceTree = "<group>"; };
 		928308751CE5B0D8008AA4D3 /* ZCBNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCBNetworking.m; sourceTree = "<group>"; };
+		92DA3EA41CEAAB66001AF690 /* NDTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTopView.h; sourceTree = "<group>"; };
+		92DA3EA51CEAAB66001AF690 /* NDTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTopView.m; sourceTree = "<group>"; };
+		92DA3EAA1CEAB1B2001AF690 /* NDDynamicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDDynamicView.h; sourceTree = "<group>"; };
+		92DA3EAB1CEAB1B2001AF690 /* NDDynamicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDDynamicView.m; sourceTree = "<group>"; };
+		92DA3EAD1CEAB203001AF690 /* NDDiscoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDDiscoverView.h; sourceTree = "<group>"; };
+		92DA3EAE1CEAB203001AF690 /* NDDiscoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDDiscoverView.m; sourceTree = "<group>"; };
+		92DA3EB01CEAB228001AF690 /* NDTeamView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTeamView.h; sourceTree = "<group>"; };
+		92DA3EB11CEAB228001AF690 /* NDTeamView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTeamView.m; sourceTree = "<group>"; };
+		92DA3EB31CEAB26C001AF690 /* NDMainScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDMainScroll.h; sourceTree = "<group>"; };
+		92DA3EB41CEAB26C001AF690 /* NDMainScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDMainScroll.m; sourceTree = "<group>"; };
+		92DA3EB61CEAB54B001AF690 /* NDNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDNavigation.h; sourceTree = "<group>"; };
+		92DA3EB71CEAB54B001AF690 /* NDNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDNavigation.m; sourceTree = "<group>"; };
+		92DA3EBA1CEAB7AD001AF690 /* NDPublicDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDPublicDefine.h; sourceTree = "<group>"; };
+		92DA3EBB1CEAB8D7001AF690 /* Nowdo-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Nowdo-PrefixHeader.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +136,7 @@
 		3E5BC0921CE56359007C84D7 /* Nowdo */ = {
 			isa = PBXGroup;
 			children = (
+				92DA3EB91CEAB773001AF690 /* Public */,
 				92409ED51CE95B3A0091808B /* UI */,
 				928308731CE5B0B5008AA4D3 /* Networking */,
 				3E5BC0961CE56359007C84D7 /* AppDelegate.h */,
@@ -132,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				3E5BC0941CE56359007C84D7 /* main.m */,
+				92DA3EBB1CEAB8D7001AF690 /* Nowdo-PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -166,6 +188,9 @@
 		92409ED51CE95B3A0091808B /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				92DA3EA71CEAB13C001AF690 /* 动态 */,
+				92DA3EA81CEAB13C001AF690 /* 发现 */,
+				92DA3EA91CEAB13C001AF690 /* 小组 */,
 				92409EDD1CE966970091808B /* mainViewController */,
 				92409ED61CE95B530091808B /* sideBar */,
 			);
@@ -187,6 +212,7 @@
 		92409EDD1CE966970091808B /* mainViewController */ = {
 			isa = PBXGroup;
 			children = (
+				92DA3EA31CEAAAD1001AF690 /* MainView */,
 				92409EDE1CE966B70091808B /* NDMainViewController.h */,
 				92409EDF1CE966B70091808B /* NDMainViewController.m */,
 			);
@@ -200,6 +226,54 @@
 				928308751CE5B0D8008AA4D3 /* ZCBNetworking.m */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		92DA3EA31CEAAAD1001AF690 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				92DA3EA41CEAAB66001AF690 /* NDTopView.h */,
+				92DA3EA51CEAAB66001AF690 /* NDTopView.m */,
+				92DA3EB31CEAB26C001AF690 /* NDMainScroll.h */,
+				92DA3EB41CEAB26C001AF690 /* NDMainScroll.m */,
+				92DA3EB61CEAB54B001AF690 /* NDNavigation.h */,
+				92DA3EB71CEAB54B001AF690 /* NDNavigation.m */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		92DA3EA71CEAB13C001AF690 /* 动态 */ = {
+			isa = PBXGroup;
+			children = (
+				92DA3EAA1CEAB1B2001AF690 /* NDDynamicView.h */,
+				92DA3EAB1CEAB1B2001AF690 /* NDDynamicView.m */,
+			);
+			path = "动态";
+			sourceTree = "<group>";
+		};
+		92DA3EA81CEAB13C001AF690 /* 发现 */ = {
+			isa = PBXGroup;
+			children = (
+				92DA3EAD1CEAB203001AF690 /* NDDiscoverView.h */,
+				92DA3EAE1CEAB203001AF690 /* NDDiscoverView.m */,
+			);
+			path = "发现";
+			sourceTree = "<group>";
+		};
+		92DA3EA91CEAB13C001AF690 /* 小组 */ = {
+			isa = PBXGroup;
+			children = (
+				92DA3EB01CEAB228001AF690 /* NDTeamView.h */,
+				92DA3EB11CEAB228001AF690 /* NDTeamView.m */,
+			);
+			path = "小组";
+			sourceTree = "<group>";
+		};
+		92DA3EB91CEAB773001AF690 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				92DA3EBA1CEAB7AD001AF690 /* NDPublicDefine.h */,
+			);
+			path = Public;
 			sourceTree = "<group>";
 		};
 		C71EE790580A98B246465C06 /* Frameworks */ = {
@@ -392,12 +466,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92DA3EB51CEAB26C001AF690 /* NDMainScroll.m in Sources */,
+				92DA3EA61CEAAB66001AF690 /* NDTopView.m in Sources */,
 				92409ED91CE95D8E0091808B /* ZCBSideBarViewController.m in Sources */,
 				92409EE01CE966B70091808B /* NDMainViewController.m in Sources */,
+				92DA3EAF1CEAB203001AF690 /* NDDiscoverView.m in Sources */,
 				928308761CE5B0D8008AA4D3 /* ZCBNetworking.m in Sources */,
+				92DA3EAC1CEAB1B2001AF690 /* NDDynamicView.m in Sources */,
 				92409EDC1CE964EF0091808B /* ZCBLeftViewController.m in Sources */,
 				3E5BC0981CE56359007C84D7 /* AppDelegate.m in Sources */,
 				3E5BC0951CE56359007C84D7 /* main.m in Sources */,
+				92DA3EB21CEAB228001AF690 /* NDTeamView.m in Sources */,
+				92DA3EB81CEAB54B001AF690 /* NDNavigation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +551,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "Nowdo/Nowdo-PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -514,6 +595,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Nowdo/Nowdo-PrefixHeader.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -533,6 +615,8 @@
 			baseConfigurationReference = 5C1037A508F544190294FBF3 /* Pods-Nowdo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Nowdo/Nowdo-PrefixHeader.pch";
 				INFOPLIST_FILE = Nowdo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -546,6 +630,8 @@
 			baseConfigurationReference = 500CC5362594CB5B5D083AA4 /* Pods-Nowdo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Nowdo/Nowdo-PrefixHeader.pch";
 				INFOPLIST_FILE = Nowdo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

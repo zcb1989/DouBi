@@ -1,0 +1,21 @@
+//
+//  Nowdo-PrefixHeader.pch
+//  Nowdo
+//
+//  Created by ZCB-MAC on 16/5/17.
+//  Copyright © 2016年 Leou. All rights reserved.
+//
+
+#ifndef Nowdo_PrefixHeader_pch
+#define Nowdo_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+
+#import "NDPublicDefine.h"
+
+#endif
+
+#endif /* Nowdo_PrefixHeader_pch */

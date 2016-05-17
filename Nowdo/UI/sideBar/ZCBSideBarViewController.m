@@ -9,6 +9,7 @@
 #import "ZCBSideBarViewController.h"
 #import "ZCBLeftViewController.h"//左侧视图
 #import "NDMainViewController.h"//主界面
+#import "NDNavigation.h"
 
 @interface ZCBSideBarViewController ()
 {
@@ -16,7 +17,7 @@
     CGFloat currentTranslate;
     UIPanGestureRecognizer *panGestureRecognizer;
     UITapGestureRecognizer *tapGestureRecognizer;
-    UINavigationController *nav;
+    NDNavigation *nav;
     
 }
 
@@ -48,15 +49,12 @@ const float MoveAnimationDuration = 0.8;
     _sideBarShowing = NO;
     //设置内容视图的边界阴影
     self.contentView.layer.shadowOffset = CGSizeMake(0, 0);
-    self.contentView.layer.shadowColor = [UIColor blackColor].CGColor;
     self.contentView.layer.shadowOpacity = 1;//阴影透明度
     self.contentView.layer.shadowRadius = 3;//阴影半径 默认值是3
     //初始化内容视图和背景视图
     self.navBackView = [[UIView alloc] initWithFrame:self.view.bounds];
-//    self.navBackView.backgroundColor = [UIColor purpleColor];
     [self.view addSubview:self.navBackView];
     self.contentView = [[UIView alloc] initWithFrame:self.view.bounds];
-    self.contentView.backgroundColor = [UIColor yellowColor];
     [self.view addSubview:self.contentView];
     //添加子视图
     ZCBLeftViewController *leftVC = [[ZCBLeftViewController alloc] init];
@@ -76,17 +74,18 @@ const float MoveAnimationDuration = 0.8;
 - (void)addMainViewController
 {
     NDMainViewController *mainVC = [[NDMainViewController alloc] init];
-    nav = [[UINavigationController alloc] initWithRootViewController:mainVC];
+    nav = [[NDNavigation alloc] initWithRootViewController:mainVC];
     [self addChildViewController:nav];
     [self.contentView addSubview:nav.view];
     [self.view bringSubviewToFront:self.contentView];
     
 }
 
+
 - (void)panInContentView:(UIPanGestureRecognizer *)panReconizer
 {
-    CGPoint point = [panReconizer locationInView:self.view];
-    CGFloat translation = [panReconizer translationInView:self.contentView].x;
+    CGPoint point = [panReconizer locationInView:panReconizer.view];
+    CGFloat translation = [panReconizer translationInView:panReconizer.view].x;
     NSLog(@"handle panRecongizer pointx is %f ; pointY is %f translation x is %f",point.x,point.y,translation);
     if (panReconizer.state == UIGestureRecognizerStateBegan)
     {
@@ -97,7 +96,8 @@ const float MoveAnimationDuration = 0.8;
     }
     else if (panReconizer.state == UIGestureRecognizerStateChanged)
     {
-        if ((translation < 0 && _sideBarShowing == NO )|| fabs(translation) > ContentOffset) {
+        //fabs(translation) > ContentOffset 左滑的时候会多滑显示右侧部分
+        if ((translation < 0 && _sideBarShowing == NO )|| fabs(translation) > ContentOffset || point.x > panAreaX) {
             
             return;//不让往左滑
         }
